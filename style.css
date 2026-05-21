@@ -50,7 +50,7 @@ h1 {
     flex-direction: column;
 }
 
-/* --- Style du Fieldset Corrigé pour le W3C --- */
+/* --- Style du Fieldset --- */
 .urgency-fieldset {
     border: 1px solid var(--border-color);
     padding: 15px;
@@ -101,21 +101,32 @@ textarea {
     resize: vertical;
 }
 
-/* --- Boutons Radio & Checkbox --- */
+/* --- Boutons Radio Adaptés --- */
 .radio-group {
     display: flex;
     gap: 20px;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
-.radio-group label {
+.radio-item {
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+.radio-item input[type="radio"] {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.radio-item label {
+    margin-bottom: 0; /* Annule le margin des labels classiques */
     font-weight: normal;
     cursor: pointer;
 }
 
+/* --- Checkbox --- */
 .checkbox-group {
     flex-direction: row;
     align-items: flex-start;
@@ -126,6 +137,8 @@ textarea {
 .checkbox-group input[type="checkbox"] {
     margin-top: 4px;
     cursor: pointer;
+    width: 16px;
+    height: 16px;
 }
 
 .checkbox-group label {
