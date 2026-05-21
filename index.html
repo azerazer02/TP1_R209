@@ -47,15 +47,18 @@
             <fieldset class="urgency-fieldset">
                 <legend>Niveau d'urgence <span class="required">*</span></legend>
                 <div class="radio-group">
-                    <label>
-                        <input type="radio" name="urgency" value="urgent"> Urgent
-                    </label>
-                    <label>
-                        <input type="radio" name="urgency" value="normal"> Normal
-                    </label>
-                    <label>
-                        <input type="radio" name="urgency" value="lent" checked> Lent
-                    </label>
+                    <div class="radio-item">
+                        <input type="radio" id="urgency-urgent" name="urgency" value="urgent">
+                        <label for="urgency-urgent">Urgent</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="urgency-normal" name="urgency" value="normal">
+                        <label for="urgency-normal">Normal</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" id="urgency-lent" name="urgency" value="lent" checked>
+                        <label for="urgency-lent">Lent</label>
+                    </div>
                 </div>
             </fieldset>
 
